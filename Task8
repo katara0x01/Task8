@@ -6,7 +6,8 @@ export default function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    console.log("UseEffect is called");
+    console.log("UseEffect is called");//include name and mobile directly in the dependency array of the useEffect
+//rather than creating an object and using it as a dependency.
   }, [name, mobile]);
 
   return (
